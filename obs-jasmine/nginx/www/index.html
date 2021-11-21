@@ -1,0 +1,112 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>demo</title>  
+    <link href="video-js-7.10.2/video-js.css" rel="stylesheet">
+    <script src="video-js-7.10.2/video.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <style>
+        .uls{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center
+        }
+        .lis{
+            list-style-type: none;
+        }
+    </style>
+</head>
+ 
+<body style="background-color: azure;">
+   <ul class="uls">
+       <li class="lis">
+            <!-- autoplay + muted 自动播放生效 -->
+            <video id="example-video" class="video-js vjs-default-skin vjs-big-play-centered" muted controls autoplay preload="auto" width="640" height="480" data-setup='{}'>      
+                <source id="source" src="hls/asd.m3u8"  type="application/x-mpegURL">
+            </video> 
+       </li>
+   </ul>
+   <script>
+		
+				
+    var myPlayer = videojs('example-video'
+    
+    );
+	//
+/*
+,{
+    muted: false,
+    controls : true,      
+    autoplay:true,
+    preload="auto"
+    }
+*/
+	
+	$(".vjs-big-play-button").css('display','none');
+	// //$(".vjs-control-bar").css('display','none');
+	$(".vjs-play-control").css('display','none');
+	// //$(".vjs-volume-panel").css('display','none')
+	// //$(".vjs-live-control").css('display','none')	
+	// $(".vjs-current-time").css('display','none');
+	// $(".vjs-time-control").css('display','none');
+	// $(".vjs-duration").css('display','none');
+	// $(".vjs-progress-control").css('display','none');
+	// $(".vjs-remaining-time").css('display','none');
+	// $(".vjs-custom-control-spacer").css('display','none');
+	// $(".vjs-playback-rate").css('display','none');
+	// $(".vjs-chapters-button").css('display','none');
+	// $(".vjs-descriptions-button").css('display','none');
+	// $(".vjs-subs-caps-button").css('display','none');
+	// $(".vjs-audio-button").css('display','none');
+
+	
+	myPlayer.ready(function(){
+	    //myPlayer.pause();
+        //myPlayer.play();
+        //myPlayer.muted(false);
+        //myPlayer.play();
+        //$('#source').src = "http://127.0.0.1:801/hls/asd.m3u8";
+
+        // var videoSrc ='http://127.0.0.1:801/hls/asd.m3u8';//新的视频播放地址
+        // myPlayer.src([
+        //                 {type: "application/x-mpegURL", src: videoSrc}
+        //             ])
+        //             myPlayer.play();
+
+	});
+	
+
+
+
+	$('#example-video').bind('contextmenu',function(){return false;});
+
+
+	$("#example-video").click(function(){   //alert("aa");   
+	});
+
+	$(".video-js").click(function(){   //alert("a111a"); 
+	  });
+
+
+$("body").mousedown(function(e){
+//alert(e.which);
+})
+
+/*
+videojsUncaught (in promise) DOMException: play() failed because the user didn't interact
+
+Chrome的autoplay政策在2018年4月做了更改。
+新的行为：浏览器为了提高用户体验，减少数据消耗，现在都在遵循autoplay政策，Chrome的autoplay 政策非常简单
+muted autoplay始终被允许
+
+音乐的autoplay 只有在下面集中情况下起作用：
+1.有用户行为发生像（click,tap,etc）.
+2.对于桌面程序，用户已经提前播放了音频
+3.对于移动端用户将音频网址home screen.
+
+*/
+</script>
+</body>  
+</html>

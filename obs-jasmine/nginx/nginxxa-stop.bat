@@ -1,0 +1,1 @@
+nginxxa.exe -s stop

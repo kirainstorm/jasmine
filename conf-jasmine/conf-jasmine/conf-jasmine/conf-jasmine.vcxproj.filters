@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="confjasmine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CameraPreview.cpp">
+      <Filter>comm</Filter>
+    </ClCompile>
+    <ClCompile Include="linphonec.cpp">
+      <Filter>comm</Filter>
+    </ClCompile>
+    <ClCompile Include="MSFunctions.cpp">
+      <Filter>comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>comm</Filter>
+    </ClCompile>
+    <ClCompile Include="video.cpp">
+      <Filter>comm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="confjasmine.h" />
+    <QtMoc Include="CameraPreview.hpp">
+      <Filter>comm</Filter>
+    </QtMoc>
+    <QtMoc Include="Camera.hpp">
+      <Filter>comm</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="confjasmine.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="confjasmine.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="comm">
+      <UniqueIdentifier>{cfc1501a-4fb2-4d55-b5eb-cb129c7994dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="linphonec.h">
+      <Filter>comm</Filter>
+    </ClInclude>
+    <ClInclude Include="MSFunctions.hpp">
+      <Filter>comm</Filter>
+    </ClInclude>
+    <ClInclude Include="video.hpp">
+      <Filter>comm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="a.qml" />
+    <None Include="b.qml" />
+    <None Include="c.qml" />
+  </ItemGroup>
+</Project>

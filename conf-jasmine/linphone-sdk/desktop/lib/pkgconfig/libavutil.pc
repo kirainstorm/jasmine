@@ -1,0 +1,14 @@
+prefix=C:/_sdk/linphone-desktop/build/linphone-sdk/desktop
+exec_prefix=${prefix}
+libdir=C:/_sdk/linphone-desktop/build/linphone-sdk/desktop/lib
+includedir=${prefix}/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 51.35.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}

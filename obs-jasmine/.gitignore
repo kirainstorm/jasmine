@@ -1,0 +1,25 @@
+
+# Precompiled Headers
+Browse.VC.db
+Browse.VC.opendb
+
+# Dependency directories
+obs-jasmine/Debug
+obs-jasmine/debug
+obs-jasmine/Release
+obs-jasmine/release
+obs-jasmine/obs-jasmine/Debug
+obs-jasmine/obs-jasmine/debug
+obs-jasmine/obs-jasmine/Release
+obs-jasmine/obs-jasmine/release
+obs-jasmine/packages
+obs-jasmine/obs-jasmine/packages
+obs-jasmine/.vs/obs-jasmine/v15/ipch
+nginx/logs/error.log
+nginx/logs/access.log
+inno/Output
+WebView2
+obs-jasmine/obs-jasmine/obsjasmine.aps
+*.ts
+*.m3u8
+nginx/logs/nginx.pid

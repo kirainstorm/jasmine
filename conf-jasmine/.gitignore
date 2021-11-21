@@ -1,0 +1,47 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+# *.so
+# *.dylib
+# *.dll
+
+# Fortran module files
+# *.mod
+# *.smod
+
+# Compiled Static libraries
+# *.lai
+# *.la
+# *.a
+#*.lib
+
+# Executables
+# *.exe
+# *.out
+# *.app
+
+freeswitch
+Browse.VC.db
+Browse.VC.opendb
+conf-jasmine/.vs/conf-jasmine/v15/ipch
+conf-jasmine/packages
+conf-jasmine/Debug
+conf-jasmine/debug
+conf-jasmine/Release
+conf-jasmine/release
+conf-jasmine/conf-jasmine/Debug
+conf-jasmine/conf-jasmine/debug
+conf-jasmine/conf-jasmine/Release
+conf-jasmine/conf-jasmine/release
+conf-jasmine/conf-jasmine/packages
